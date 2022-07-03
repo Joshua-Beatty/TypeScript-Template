@@ -4,6 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "prebuild": "rimraf lib",
     "build": "node esbuild.config.js",
     "start": "npm run build && node lib/index.js",
     "dev": "nodemon --exec npm start --watch src -e ts"
@@ -13,7 +14,8 @@
   "dependencies": {
     "esbuild": "^0.14.48",
     "esbuild-node-externals": "^1.4.1",
-    "node-color-log": "^9.0.0"
+    "node-color-log": "^9.0.0",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.18"
