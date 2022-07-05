@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/index.ts"],
-  "sourcesContent": ["import Logger from \"node-color-log\"\r\n\r\nlet message: string = 'Hello, World!';\r\nLogger.info(message);"],
-  "mappings": "2cAAA,MAAmB,6BAEf,EAAkB,gBACtB,UAAO,KAAK,CAAO",
-  "names": []
-}
